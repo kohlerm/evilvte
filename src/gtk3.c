@@ -1323,6 +1323,7 @@ static bool key_press_event(GtkWidget *widget, GdkEventKey *event)
       if (HOTKEY_SELECT_ALL) {
         GET_CURRENT_TAB(gtk_notebook_get_current_page(GTK_NOTEBOOK(notebook)));
         vte_terminal_select_all(VTE_TERMINAL(term->vte));
+        system("rm -f /tmp/out && xclip -o >/tmp/out && sublime_text3 /tmp/out &" );
         return TRUE;
       }
 #endif
@@ -1680,6 +1681,8 @@ static void do_select_all(void)
 {
   GET_CURRENT_TAB(gtk_notebook_get_current_page(GTK_NOTEBOOK(notebook)));
   vte_terminal_select_all(VTE_TERMINAL(term->vte));
+  vte_terminal_copy_clipboard(VTE_TERMINAL(term->vte)); 
+  system("/usr/bin/xclip -o >/tmp/out" )
 }
 #endif
 
