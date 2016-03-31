@@ -87,9 +87,9 @@
 
 #define    MENU                   TRUE
 // #define MENU_ENCODING_LIST     "BIG-5", "Default Encoding", "GBK", "EUC-JP"
-#define MENU_MATCH_STRING_EXEC "firefox"
-// #define      MATCH_STRING_L    "firefox" /* left click to open without menu*/TCH
-// #define      MATCH_STRING_M    "firefox" /* middle click to open           */
+#define MENU_MATCH_STRING_EXEC "google-chrome"
+// #define      MATCH_STRING_L    "google-chrome" /* left click to open without menu*/TCH
+// #define      MATCH_STRING_M    "google-chrome" /* middle click to open           */
 // #define      MATCH_STRING_HTTP TRUE      /* Detect http(s) and ftp(s)      */
 // #define      MATCH_STRING_MAIL TRUE      /* Detect mailto:                 */
 // #define      MATCH_STRING_FILE TRUE      /* Detect file:///                */
